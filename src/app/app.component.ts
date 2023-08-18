@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'dashboard-agp';
+
+  changeTitle(){
+    this.title = 'Changed';
+  }
 }
