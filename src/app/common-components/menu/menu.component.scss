@@ -1,15 +1,19 @@
 body{
   background-color: #FF9900;
-  height: 500px;
 }
 aside{
-  margin-top: 60px;
+  margin: 14px;
   padding: 18px;
   width: 315px;
   display: flex;
   flex-direction: column;
   gap: 8px;
   box-shadow: 2px 0px 20px rgb(227, 227, 227);
+
+  height: 90%;
+
+  border-radius: 16px;
+  background-color: white;
 }
 .menu-text{
   color: rgb(184, 184, 184);

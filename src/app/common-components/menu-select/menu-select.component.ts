@@ -8,4 +8,5 @@ import { Component, Input} from '@angular/core';
 export class MenuSelectComponent {
   @Input() name = '';
   @Input() img = '';
+  @Input() page = '';
 }

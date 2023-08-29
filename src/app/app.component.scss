@@ -1,7 +1,13 @@
-.example-container {
-  width: 400px;
-  height: 200px;
-  margin: 10px;
-  border: 1px solid #555;
+.container {
+  height: 100%;
+
+  mat-sidenav{
+    background-color: #F0F5F9;
+  }
+  mat-sidenav-content{
+    background-color: #F0F5F9;
+  }
+
 }
+
 
