@@ -16,14 +16,18 @@ import {MatIconModule} from '@angular/material/icon';
 import { MenuSelectComponent } from './common-components/menu-select/menu-select.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatTableModule} from '@angular/material/table';
-
+import {MatInputModule} from '@angular/material/input';
 //Enrutamiento
 import { RouterModule, Routes } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { EstadisticasComponent } from './estadisticas/estadisticas.component';
+import { LoginComponent } from './inicioSesion/login/login.component';
+import { LogoutComponent } from './inicioSesion/logout/logout.component';
 const appRoutes:Routes=[
   {path:'home', component:HomeComponent},
   {path:'', redirectTo: '/home', pathMatch: 'full'},
+  {path:'login', component:LoginComponent},
+  {path:'logout', component:LogoutComponent},
   {path:'registros', component:RegistrosComponent},
   {path:'estadisticas', component:EstadisticasComponent},
   {path:'**', component:PageNotFoundComponent}
@@ -38,7 +42,9 @@ const appRoutes:Routes=[
     HomeComponent,
     RegistrosComponent,
     PageNotFoundComponent,
-    EstadisticasComponent
+    EstadisticasComponent,
+    LoginComponent,
+    LogoutComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,7 +55,7 @@ const appRoutes:Routes=[
     MatToolbarModule,
     MatSidenavModule,
     MatTableModule,
-
+    MatInputModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],

@@ -1,0 +1,38 @@
+.container{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+
+}
+.content{
+  -webkit-box-shadow: 2px 2px 15px 0px rgba(176,176,176,1);
+  -moz-box-shadow: 2px 2px 15px 0px rgba(176,176,176,1);
+  box-shadow: 2px 2px 15px 0px rgba(176,176,176,1);
+  margin-top: 100px;
+  height: 400px;
+  width: 500px;
+  border-radius: 16px;
+  padding: 30px;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+mat-form-field{
+  color: rebeccapurple;
+}
+
+@media screen and (max-width: 600px) {
+  .content{
+    width: 70%;
+    margin-top: 50px;
+  }
+}
+
