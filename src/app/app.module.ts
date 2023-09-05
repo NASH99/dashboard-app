@@ -9,7 +9,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { RegistrosComponent } from './registros/registros.component';
 
-
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
@@ -17,17 +16,20 @@ import { MenuSelectComponent } from './common-components/menu-select/menu-select
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatTableModule} from '@angular/material/table';
 import {MatInputModule} from '@angular/material/input';
-//Enrutamiento
-import { RouterModule, Routes } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { EstadisticasComponent } from './estadisticas/estadisticas.component';
-import { LoginComponent } from './inicioSesion/login/login.component';
-import { LogoutComponent } from './inicioSesion/logout/logout.component';
+import { LoginComponent } from './auth/login/login.component';
+
+import { HeaderComponent } from './shared/header/header.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { NavComponent } from './shared/nav/nav.component';
+
+//Enrutamiento
+import { RouterModule, Routes } from '@angular/router';
+
 const appRoutes:Routes=[
   {path:'home', component:HomeComponent},
   {path:'', redirectTo: '/home', pathMatch: 'full'},
-  {path:'login', component:LoginComponent},
-  {path:'logout', component:LogoutComponent},
   {path:'registros', component:RegistrosComponent},
   {path:'estadisticas', component:EstadisticasComponent},
   {path:'**', component:PageNotFoundComponent}
@@ -43,8 +45,10 @@ const appRoutes:Routes=[
     RegistrosComponent,
     PageNotFoundComponent,
     EstadisticasComponent,
-    LoginComponent,
-    LogoutComponent,
+    HeaderComponent,
+    DashboardComponent,
+    NavComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

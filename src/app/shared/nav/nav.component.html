@@ -1,0 +1,26 @@
+<mat-toolbar class="navbar">
+
+
+  <div class="navbar-content">
+    <button mat-icon-button *ngIf="mobileOn">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <img width="120" alt="AGP Logo" src="./../assets/logo.png"/>
+    <span>Dashboard</span>
+  </div>
+
+
+<div class="navbar-login" *ngIf="!mobileOn">
+  <div *ngIf="!userLoginOn">
+    <span routerLink="/login">Iniciar Sesion</span>
+    <span>Registrarse</span>
+  </div>
+  <div *ngIf="userLoginOn">
+    <span>Cerrar Sesion</span>
+    <span><object data="./../assets/icons/user.svg" width="24px"></object></span>
+
+  </div>
+</div>
+
+
+</mat-toolbar>

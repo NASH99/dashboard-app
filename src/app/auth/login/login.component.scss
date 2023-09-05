@@ -25,8 +25,8 @@
   width: 100%;
 }
 
-mat-form-field{
-  color: rebeccapurple;
+mat-sidenav-container{
+  background-color: rebeccapurple;
 }
 
 @media screen and (max-width: 600px) {
@@ -35,4 +35,3 @@ mat-form-field{
     margin-top: 50px;
   }
 }
-

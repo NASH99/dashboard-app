@@ -1,0 +1,18 @@
+
+.navbar{
+  justify-content: space-between;
+  .navbar-content{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .navbar-login{
+    display: flex;
+    span:nth-child(2){
+      margin-left: 12px;
+    }
+  }
+
+}
+
+
