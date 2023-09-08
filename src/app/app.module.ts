@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module'; //Etiqueta de routing
 //Components
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './common-components/navbar/navbar.component';
 import { MenuComponent } from './common-components/menu/menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './pages/home/home.component';
@@ -30,7 +29,6 @@ import { HomeDashboardComponent } from './pages/dashboard/home-dashboard/home-da
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
     MenuComponent,
     MenuSelectComponent,
     HomeComponent,
