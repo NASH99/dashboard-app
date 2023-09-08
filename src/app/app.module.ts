@@ -6,13 +6,12 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './common-components/navbar/navbar.component';
 import { MenuComponent } from './common-components/menu/menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HomeComponent } from './home/home.component';
-import { RegistrosComponent } from './registros/registros.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { EstadisticasComponent } from './estadisticas/estadisticas.component';
+import { HomeComponent } from './pages/home/home.component';
+import { RegistrosComponent } from './pages/dashboard/registros/registros.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { EstadisticasComponent } from './pages/dashboard/estadisticas/estadisticas.component';
 import { LoginComponent } from './auth/login/login.component';
-import { HeaderComponent } from './shared/header/header.component';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { DashboardComponent } from './pages/dashboard/dashboard/dashboard.component';
 import { NavComponent } from './shared/nav/nav.component';
 import { MenuSelectComponent } from './common-components/menu-select/menu-select.component';
 //Angular Material Modules
@@ -26,6 +25,7 @@ import {MatInputModule} from '@angular/material/input';
 //Enrutamiento
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeDashboardComponent } from './pages/dashboard/home-dashboard/home-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -37,10 +37,10 @@ import { HttpClientModule } from '@angular/common/http';
     RegistrosComponent,
     PageNotFoundComponent,
     EstadisticasComponent,
-    HeaderComponent,
     DashboardComponent,
     NavComponent,
-    LoginComponent
+    LoginComponent,
+    HomeDashboardComponent
   ],
   imports: [
     BrowserModule,

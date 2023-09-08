@@ -8,9 +8,8 @@ import { Component ,OnInit} from '@angular/core';
 export class NavComponent implements OnInit{
   userLoginOn:boolean = false;
   mobileOn:boolean = false;
-  constructor(){
+  constructor(){}
 
-  }
   ngOnInit(): void {
 
   }
